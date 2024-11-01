@@ -1,6 +1,6 @@
 = Cisco Packet Tracer 简体中文笔记 =
 
-# 通用Switch基本配置
+= 通用Switch基本配置 =
 
 *以下命令通常在全局配置模式
 
