@@ -19,6 +19,7 @@ ip routing           !在三层交换机启用的路由功能
 
 == 设备名称 ==
 
+
 配置Switch,Router设备名称
 
 
@@ -31,18 +32,14 @@ Host <User>  !配置设备名称,Switch和Router通用,可简写成 Ho Switch1
 
 配置Switch,Router设备密码,密码有分明文
 
-
-明文密码
 enable password 123  !明文密码 123,可简写成 en pas 123
 
-
-密文密码
 enable secret 123    !密文密码 123,可简写成 "en sec 123"
 
 
 == Telnet 远程登命令 ==
 
-==== Switch二层交换机 ===
+=== Switch二层交换机 ===
 
 Switch二层交换机和三层交换机配置相同
 
