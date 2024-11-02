@@ -111,3 +111,5 @@ sw m t               !命令 SW M T, 启用Trunk模式
 
 
 sw t a vlan 2
+
+== Cisco ==
