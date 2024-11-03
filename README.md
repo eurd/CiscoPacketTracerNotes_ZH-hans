@@ -1,4 +1,9 @@
 # Cisco Packet Tracer 简体中文笔记
+
+macOS可以使用使用 ```⌘ + F ```
+
+Windows可以使用 ```Ctrl+F``` 来查找内容
+
 ## 通用Switch基本配置
 *以下命令通常在全局配置模式
 
