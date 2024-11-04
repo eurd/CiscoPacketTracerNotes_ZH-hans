@@ -156,8 +156,27 @@ sw t a vlan 2
     
     
 ## PPP封装
-***
+```
 in s0/0/0
-en ppp
-cl ra
-***
+en ppp        !封装ppp协议
+cl ra 72000   !配置时钟
+```
+
+```
+ppp au chap   !chap 认证
+ppp au pap    !pap  认证
+```
+
+## 静态路由和默认路由
+### 静态
+端口模式
+```
+ip route #目的地址 #子网掩码 #本地出口
+```
+
+下一跳
+```
+ip route #目的地址 #子网掩码 #下一跳地址
+```
+
+### 
