@@ -155,4 +155,9 @@ sw t a vlan 2
 <br>
     
     
-
+## PPP封装
+'
+in s0/0/0
+en ppp
+cl ra
+'
