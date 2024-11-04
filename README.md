@@ -13,8 +13,12 @@ Windows可以使用 ```Ctrl+F``` 来查找内容
 enable               !特权模式,通常简写 en
 configure            !全局配置模式，通常简写 conf
 end                  !返回到特权模式
-show running-config  !查看修改配置，通常简写 sh r
+exit                  !返回上一级
+show running-config   !查看修改配置，通常简写 sh r
 ip routing           !在三层交换机启用的路由功能
+no sh
+no sw
+int
 ````
 <br>
 <br>
@@ -124,15 +128,24 @@ sw ac vlan 2
 
 
 ## Trunk模式
-启用Trunk模式
+### 二层交换机启用Trunk模式
 ```
 in f0/2              !可以使用多接口
 sw m t               !命令 SW M T, 启用Trunk模式
 ```
-<br>
-<br>
 
+### 三层交换机trunk模式
+```
+int f0/2
+sw t e dot1q
+sw m t
+```
 
+### 子接口封装vlan
+```
+in f0/0.3
+en dot1q 40      !封装vlan40
+```
 
 ## Trunk接入允许通过的VLAN
 ```
@@ -140,3 +153,6 @@ sw t a vlan 2
 ```
 <br>
 <br>
+    
+    
+
